@@ -1,51 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nageshwar Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/e1cbc8d8fd.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
     <!-- ------ Header ------ -->
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="/Images/Name-Logo.png" class="logo" alt="Name Logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <p>Full-Stack Web Developer</p>
-                <h1>Hi, I'm <span>Nageshwar Pawar</span><br>From Nanded-Maharashtra</h1>
-            </div>
+      <div class="container">
+        <nav>
+          <img src="/Images/logo.png" class="logo" alt="Name Logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Full-Stack Web Developer</p>
+          <h1>
+            Hi, I'm <span>Nageshwar Pawar</span><br />From Nanded-Maharashtra
+          </h1>
         </div>
-
-        <!-- ------About------ -->
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="Images/Image2-removebg-preview.png" alt="User Image">
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p>I'm Nageshwar, a passionate Full Stack Web Developer with a knack for turning ideas into digital reality. My journey in the world of web development began with a deep curiosity and a desire to create meaningful and engaging online experiences.</p>
-                        <div class="tab-titles">
-                            <p class="tab-linkse">Skills</p>
-                            <p class="tab-linkse">Experience</p>
-                            <p class="tab-linkse">Education</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-</body>
-<script src="script.js"></script>
+
+    <!-- ------ About ------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/user.png" alt="User Image" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm Nageshwar, a passionate Full Stack Web Developer with a knack
+              for turning ideas into digital reality. My journey in the world of
+              web development began with a deep curiosity and a desire to create
+              meaningful and engaging online experiences.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <!-- Skills -->
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li><h3>Front - End Web Development</h3></li>
+                <li>
+                  <span>HTML</span><br />Creating the structure and content of
+                  web pages using markup language.
+                </li>
+                <li>
+                  <span>CSS</span><br />Styling and designing web pages,
+                  enhancing visual presentation and layout.
+                </li>
+                <li>
+                  <span>JavaScript</span><br />Adding interactivity and dynamic
+                  behavior to web pages.
+                </li>
+                <li>
+                  <span>Version Control (Git)</span><br />Learn the basics of
+                  Git for source code management.
+                </li>
+              </ul>
+            </div>
+            <!-- Experience -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><h3>Work Experience</h3></li>
+                <li>
+                  <span>E-Commerce Web Site</span><br />Using HTML || CSS ||
+                  JavaScript
+                </li>
+                <li>
+                  <span>Superhero Resume</span
+                  ><br />Using HTML || CSS
+                </li>
+                <li>
+                  <span>Self Employee (Proprietor)</span><br />
+                  At PAWAR NAGESHWAR PUNDLIKRAO [Sept 2020 - Jan 2023]
+                </li>
+                <li>
+                  <span>Data Manager</span><br />Jaishambho Multiservices [June
+                  2015 - May 2020]
+                </li>
+              </ul>
+            </div>
+            <!-- Education -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><h3>Educational Qualifications</h3></li>
+                <li>
+                  <span>2023 - Present</span><br />Full-Stack Web Development in
+                  Masai School
+                </li>
+                <li>
+                  <span>2018 - 2021</span><br />Graduation in Bachelor of Arts
+                </li>
+                <li>
+                  <span>2014 - 2015</span><br />Higher Secondary Education
+                  Certificate
+                </li>
+                <li>
+                  <span>2012 - 2013</span><br />Secondary School Education
+                  Certificate
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------ Services ------ -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-users"></i>
+            <h2>Front - End Web Developer</h2>
+            <p>I am a front-end developer specializing in crafting engaging and user-friendly web interfaces using HTML, CSS, and JavaScript, with a keen eye for design and a focus on creating seamless and visually appealing user experiences.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-github"></i>
+            <h2>Git Version Controller</h2>
+            <p>I am a skilled Git version control practitioner, proficient in managing code repositories, tracking changes, and facilitating collaborative development workflows to ensure codebase integrity and efficient team collaboration.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-users-gear"></i>
+            <h2>Back - End Web Developer</h2>
+            <p>I am a backend web developer proficient in [insert your preferred server-side language], with expertise in designing and implementing server-side logic, database management, and API integration, ensuring the functionality, performance, and security of web applications.</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ------ Portfolio ------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/Images/work-1.png" alt="">
+            <div class="layer">
+              <h3></h3>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/Images/work-2.png" alt="">
+          </div>
+          <div class="work">
+            <img src="/Images/work-3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="script.js"></script>
 </html>
