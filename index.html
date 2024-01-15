@@ -5,21 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nageshwar Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/e1cbc8d8fd.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/e1cbc8d8fd.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- ------ Header ------ -->
     <div id="header">
       <div class="container">
         <nav>
-          <img src="/Images/logo.png" class="logo" alt="Name Logo" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+          <!-- <img src="/Images/Logo.png" class="logo" alt="Name Logo" /> -->
+          <h1 id="logo">
+            <span class="logo logoN">N</span>ageshwar<span class="logo logoDot"
+              >.</span
+            >
+          </h1>
+          <ul id="side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#my-project">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
         </nav>
         <div class="header-text">
           <p>Full-Stack Web Developer</p>
@@ -35,7 +47,7 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="Images/user.png" alt="User Image" />
+            <img src="Images/User.png" alt="User Image" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
@@ -84,10 +96,7 @@
                   <span>E-Commerce Web Site</span><br />Using HTML || CSS ||
                   JavaScript
                 </li>
-                <li>
-                  <span>Superhero Resume</span
-                  ><br />Using HTML || CSS
-                </li>
+                <li><span>Superhero Resume</span><br />Using HTML || CSS</li>
                 <li>
                   <span>Self Employee (Proprietor)</span><br />
                   At PAWAR NAGESHWAR PUNDLIKRAO [Sept 2020 - Jan 2023]
@@ -132,46 +141,180 @@
           <div>
             <i class="fa-solid fa-users"></i>
             <h2>Front - End Web Developer</h2>
-            <p>I am a front-end developer specializing in crafting engaging and user-friendly web interfaces using HTML, CSS, and JavaScript, with a keen eye for design and a focus on creating seamless and visually appealing user experiences.</p>
+            <p>
+              I am a front-end developer specializing in crafting engaging and
+              user-friendly web interfaces using HTML, CSS, and JavaScript, with
+              a keen eye for design and a focus on creating seamless and
+              visually appealing user experiences.
+            </p>
             <a href="#">Learn More</a>
           </div>
           <div>
             <i class="fa-brands fa-github"></i>
             <h2>Git Version Controller</h2>
-            <p>I am a skilled Git version control practitioner, proficient in managing code repositories, tracking changes, and facilitating collaborative development workflows to ensure codebase integrity and efficient team collaboration.</p>
+            <p>
+              I am a skilled Git version control practitioner, proficient in
+              managing code repositories, tracking changes, and facilitating
+              collaborative development workflows to ensure codebase integrity
+              and efficient team collaboration.
+            </p>
             <a href="#">Learn More</a>
           </div>
           <div>
             <i class="fa-solid fa-users-gear"></i>
             <h2>Back - End Web Developer</h2>
-            <p>I am a backend web developer proficient in [insert your preferred server-side language], with expertise in designing and implementing server-side logic, database management, and API integration, ensuring the functionality, performance, and security of web applications.</p>
+            <p>
+              I am a backend web developer proficient in [insert your preferred
+              server-side language], with expertise in designing and
+              implementing server-side logic, database management, and API
+              integration, ensuring the functionality, performance, and security
+              of web applications.
+            </p>
             <a href="#">Learn More</a>
           </div>
         </div>
       </div>
     </div>
-    
+
     <!-- ------ Portfolio ------ -->
     <div id="portfolio">
       <div class="container">
-        <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title" id="my-project">My Work</h1>
         <div class="work-list">
           <div class="work">
-            <img src="/Images/work-1.png" alt="">
+            <img src="/Images/shopify.png" alt="" />
             <div class="layer">
-              <h3></h3>
+              <h3>Online Shopping Website</h3>
+              <p>
+                Experience a seamless online shopping adventure with our user-friendly website, blending stylish design with intuitive navigation and enhanced functionality through HTML, CSS, and JS innovations.
+              </p>
+              <a href="https://shopifybynageshwar.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
             </div>
           </div>
           <div class="work">
-            <img src="/Images/work-2.png" alt="">
+            <img src="/Images/superhero.png" alt="" />
+            <div class="layer">
+              <h3>Superhero Resume</h3>
+              <p>
+                Krrish's superhero resume showcases exceptional skills in
+                crime-fighting, superhuman strength, and a commitment to
+                justice, making him an invaluable asset to any superhero team.
+              </p>
+              <a href="/Images/Superhero-Resume/Superhero Resume.html" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
           </div>
           <div class="work">
-            <img src="/Images/work-3.png" alt="">
+            <img src="/Images/Portfolio-image.png" alt="" />
+            <div class="layer">
+              <h3>Personal Portfolio</h3>
+              <p>
+                Embark on a visual journey through my skills and achievements with a meticulously designed personal portfolio, merging creativity and functionality through HTML, CSS, and JS to showcase my unique professional identity.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/Images/Resume-Image.png" alt="" />
+            <div class="layer">
+              <h3>Personal Resume</h3>
+              <p>
+                Unlock the story of my professional journey through a dynamic and visually captivating personal resume, meticulously crafted with HTML, CSS, and JS for an engaging user experience.
+              </p>
+              <a href="/Images/Resume.pdf" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
           </div>
         </div>
+        <a href="#" class="btn">See More</a>
       </div>
     </div>
 
+    <!-- ------ Contact ------ -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-regular fa-envelope"></i> nageshpawarpatil@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i> (+91) 9730870409</p>
+            <p><i class="fa-solid fa-square-phone"></i> (+91) 9503198637</p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/atimhsusnageshpawar5630"
+                target="_blank"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a href="https://twitter.com/NageshwarP0409" target="_blank"
+                ><i class="fa-brands fa-square-twitter"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/aspiring_web_developer/"
+                target="_blank"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/nageshwar-pawar-b94495262/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Nageshwar1997" target="_blank"
+                ><i class="fa-brands fa-square-github"></i
+              ></a>
+              <a
+                href="https://mail.google.com/mail/u/0/#inbox/FMfcgzGwJmDNPSQXGgwfPvTxPrTBxgrP?compose=new"
+                target="_blank"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+            </div>
+            <a
+              href="Images/Resume.pdf"
+              download
+              class="btn btn2"
+              id="resume"
+              target="_blank"
+              onclick="openResume()"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          copyright © 2024 Nageshwar Pawar.
+          <i class="fa-solid fa-heart"></i> All Rights Reserved
+        </p>
+      </div>
+    </div>
   </body>
   <script src="script.js"></script>
+  <script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbxBxeDYMbqeV-Rt5NLGQIGxdNNGNdMi6KiWJnfY15sYx5W7yg4ly7WMvkgpVQ8dTVLdWg/exec";
+    const form = document.forms["submit-to-google-sheet"];
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => console.log("Success!", response))
+        .catch((error) => console.error("Error!", error.message));
+    });
+  </script>
 </html>

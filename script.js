@@ -14,4 +14,23 @@ function openTab(tabName) {
 }
 
 
-// 
+// Menu Bar
+
+let sideMenu = document.getElementById("side-menu");
+
+function openMenu() {
+    sideMenu.style.right = "0px";
+}
+function closeMenu() {
+    sideMenu.style.right = "-150px";
+}
+
+
+// Open Resume
+
+function openResume() {
+    window.open('Images/Resume.pdf', '_blank');
+}
+
+
+
