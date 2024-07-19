@@ -21,16 +21,24 @@
               >.</span
             >
           </h1>
-          <ul id="side-menu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#my-project">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-          </ul>
+            <ul id="side-menu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Skills</a></li>
+              <li><a href="#my-project">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a
+                  href="Images/Resume.pdf"
+                  download
+                  id="resume"
+                  target="_blank"
+                  onclick="openResume()"
+                  >Resume</a
+                >
+              </li>
+              <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
           <i class="fa-solid fa-bars" onclick="openMenu()"></i>
         </nav>
         <div class="header-text">
@@ -52,10 +60,15 @@
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <p>
-              I'm Nageshwar, a passionate Full Stack Web Developer with a knack
-              for turning ideas into digital reality. My journey in the world of
-              web development began with a deep curiosity and a desire to create
-              meaningful and engaging online experiences.
+              I'm Nageshwar, a dedicated Full Stack Web Developer from Nanded,
+              Maharashtra, driven by a passion for translating ideas into
+              compelling digital solutions. My journey began with a curiosity
+              for web development and has evolved into a quest to create
+              impactful online experiences. Motivated by the dynamic tech
+              landscape and the opportunity to innovate, I strive to deliver
+              excellence in every project I undertake. My goal is to not only
+              meet client expectations but to exceed them, leveraging both
+              creativity and technical expertise.
             </p>
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="openTab('Skills')">
@@ -71,20 +84,46 @@
               <ul>
                 <li><h3>Front - End Web Development</h3></li>
                 <li>
-                  <span>HTML</span><br />Creating the structure and content of
-                  web pages using markup language.
+                  <span>HTML</span><br />Proficiency in HTML for structuring
+                  well-formed, semantic web pages, incorporating accessibility
+                  best practices and ensuring cross-browser compatibility.
                 </li>
                 <li>
-                  <span>CSS</span><br />Styling and designing web pages,
-                  enhancing visual presentation and layout.
+                  <span>CSS</span><br />Proficiency in CSS for designing
+                  visually appealing and responsive user interfaces, utilizing
+                  modern layout techniques and CSS frameworks to enhance user
+                  experience.
                 </li>
                 <li>
-                  <span>JavaScript</span><br />Adding interactivity and dynamic
-                  behavior to web pages.
+                  <span>JavaScript</span><br />Proficiency in JavaScript for
+                  developing interactive and efficient web applications with a
+                  strong understanding of ES6+ features and best practices.
                 </li>
                 <li>
-                  <span>Version Control (Git)</span><br />Learn the basics of
-                  Git for source code management.
+                  <span>React.js</span><br />Expertise in React.js for building
+                  dynamic and responsive user interfaces with seamless state
+                  management.
+                </li>
+              </ul>
+              <ul>
+                <li><h3>Back - End Web Development</h3></li>
+                <li>
+                  <span>MongoDB</span><br />Proficiency in MongoDB for designing
+                  and implementing scalable and efficient database solutions,
+                  utilizing NoSQL principles to manage and store diverse data
+                  types effectively.
+                </li>
+                <li>
+                  <span>Express.js</span><br />Proficiency in Express.js for
+                  building robust and scalable server-side applications,
+                  leveraging middleware and routing to streamline API
+                  development and enhance performance.
+                </li>
+                <li>
+                  <span>Node.js</span><br />Proficiency in Node.js for
+                  developing scalable and efficient server-side applications,
+                  utilizing non-blocking I/O and asynchronous programming to
+                  handle concurrent operations effectively.
                 </li>
               </ul>
             </div>
@@ -136,7 +175,7 @@
     <!-- ------ Services ------ -->
     <div id="services">
       <div class="container">
-        <h1 class="sub-title">My Services</h1>
+        <h1 class="sub-title">Skills</h1>
         <div class="services-list">
           <div>
             <i class="fa-solid fa-users"></i>
@@ -177,18 +216,55 @@
     </div>
 
     <!-- ------ Portfolio ------ -->
-    <div id="portfolio">
+    <div id="my-project">
       <div class="container">
-        <h1 class="sub-title" id="my-project">My Work</h1>
+        <h1 class="sub-title">Projects</h1>
         <div class="work-list">
           <div class="work">
-            <img src="/Images/shopify.png" alt="" />
+            <img src="/Images/nordstrom.png" alt="" />
             <div class="layer">
-              <h3>Online Shopping Website</h3>
+              <h3>E-Commerce Website</h3>
               <p>
-                Experience a seamless online shopping adventure with our user-friendly website, blending stylish design with intuitive navigation and enhanced functionality through HTML, CSS, and JS innovations.
+                Experience a seamless online shopping adventure with our
+                user-friendly website, blending stylish design with intuitive
+                navigation and enhanced functionality through HTML, CSS, JS and
+                MERN innovations.
               </p>
-              <a href="https://shopifybynageshwar.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+              <div class="git_live">
+                <a
+                  href="https://nordstromrack-com-frontend.vercel.app/"
+                  target="_blank"
+                  ><i class="fa-solid fa-up-right-from-square"></i
+                ></a>
+                <a
+                  href="https://github.com/Nageshwar1997/NORDSTROMRACK.com"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/Images/movix.png" alt="" />
+            <div class="layer">
+              <h3>Movix.com</h3>
+              <p>
+                Implemented a sleek and intuitive user interface using React.js
+                to provide an immersive movie browsing experience. Utilized
+                advanced search functionality and customizable filters to allow
+                users to quickly find movies by genre, release year, and
+                ratings.
+              </p>
+              <div class="git_live">
+                <a href="https://movix-by-nageshwar.netlify.app" target="_blank"
+                  ><i class="fa-solid fa-up-right-from-square"></i
+                ></a>
+                <a
+                  href="https://github.com/Nageshwar1997/MoviX.com"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
             </div>
           </div>
           <div class="work">
@@ -200,31 +276,22 @@
                 crime-fighting, superhuman strength, and a commitment to
                 justice, making him an invaluable asset to any superhero team.
               </p>
-              <a href="/Images/Superhero-Resume/Superhero Resume.html" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="/Images/Portfolio-image.png" alt="" />
-            <div class="layer">
-              <h3>Personal Portfolio</h3>
-              <p>
-                Embark on a visual journey through my skills and achievements with a meticulously designed personal portfolio, merging creativity and functionality through HTML, CSS, and JS to showcase my unique professional identity.
-              </p>
-              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="/Images/Resume-Image.png" alt="" />
-            <div class="layer">
-              <h3>Personal Resume</h3>
-              <p>
-                Unlock the story of my professional journey through a dynamic and visually captivating personal resume, meticulously crafted with HTML, CSS, and JS for an engaging user experience.
-              </p>
-              <a href="/Images/Resume.pdf" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+              <div class="git_live">
+                <a
+                  href="/Images/Superhero-Resume/Superhero Resume.html"
+                  target="_blank"
+                  ><i class="fa-solid fa-up-right-from-square"></i
+                ></a>
+                <a
+                  href="https://codepen.io/Nageshwar-Pawar/pen/GRPpLKy"
+                  target="_blank"
+                  ><i class="fa-brands fa-codepen"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
-        <a href="#" class="btn">See More</a>
+        <!-- <a href="#" class="btn">See More</a> -->
       </div>
     </div>
 
@@ -311,15 +378,15 @@
       "https://script.google.com/macros/s/AKfycbxBxeDYMbqeV-Rt5NLGQIGxdNNGNdMi6KiWJnfY15sYx5W7yg4ly7WMvkgpVQ8dTVLdWg/exec";
     const form = document.forms["submit-to-google-sheet"];
 
-    const msg =document.getElementById("msg");
+    const msg = document.getElementById("msg");
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       fetch(scriptURL, { method: "POST", body: new FormData(form) })
         .then((response) => {
           msg.innerHTML = "Message Sent Successfully";
-          setTimeout(function(){
-            msg.innerHTML="";
-          },5000);
+          setTimeout(function () {
+            msg.innerHTML = "";
+          }, 5000);
           form.reset();
         })
         .catch((error) => console.error("Error!", error.message));

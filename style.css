@@ -16,30 +16,30 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(Images/Background.png);
+  background-image: url(./Images/Background.png);
   background-size: cover;
   background-position: center;
 }
 
 .container {
+  width: 100%;
   padding: 10px 10%;
 }
 
 nav {
   display: flex;
+  width: 100%;
+  padding: 10px 10%;
+  background-color: #080808;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   align-items: center;
   justify-content: space-between;
+  border-radius: 10px;
   flex-wrap: wrap;
   position: fixed;
-    top: 0;
-    width: 80%;
-    z-index: 1000; 
-}
-
-nav:hover{
-    background-color: rgba(193, 180, 184, 0.5);
-    border-radius: 10px;
-    
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 #logo {
@@ -78,6 +78,10 @@ nav ul li a::after {
   left: 0;
   bottom: -6px;
   transition: 0.5s;
+}
+
+#resume {
+  color: #ff004f;
 }
 
 nav ul li a:hover::after {
@@ -216,10 +220,6 @@ nav ul li a:hover::after {
 }
 
 /* ------ Portfolio ------ */
-#portfolio {
-  padding: 50px 0;
-}
-
 .work-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -229,6 +229,7 @@ nav ul li a:hover::after {
 .work {
   border-radius: 10px;
   position: relative;
+  width: 100%;
   overflow: hidden;
 }
 .work img {
@@ -261,18 +262,26 @@ nav ul li a:hover::after {
   font-weight: 500;
   margin-bottom: 20px;
 }
+.layer .git_live {
+  width: 100px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
 
 .layer a {
-  margin-top: 20px;
-  color: #ff004f;
+  color: black;
   text-decoration: none;
   font-size: 18px;
-  line-height: 60px;
   background-color: #fff;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .work:hover img {
@@ -456,9 +465,41 @@ nav .fa-solid {
     padding-top: 20px;
     font-size: 13px;
   }
+  .layer {
+    font-size: 10px;
+  }
+
+  .layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .layer .git_live {
+    width: 100px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .layer a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  #resume {
+  color: #fff;
+}
 }
 
-#msg{
+#msg {
   color: #61b752;
   margin-top: -40px;
   display: block;
