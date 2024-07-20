@@ -8,7 +8,7 @@ Welcome to my personal portfolio repository! This project showcases my journey a
 
 I'm a passionate web developer with a keen interest in creating dynamic and user-friendly web applications. My journey has been driven by curiosity and a constant desire to learn and grow in the field of web development.
 
-![About Me](./Images/readmeImages/about%20me.png)
+![About Me](./Images/readmeImages/aboutme.png)
 
 ## 🛠️ Technologies & Tools
 
@@ -16,6 +16,8 @@ I'm a passionate web developer with a keen interest in creating dynamic and user
 - **Frameworks/Libraries:** React, Express, MongoDB
 - **Tools:** Git, Docker, Visual Studio Code, Cloudinary
 - **Other Skills:** RESTful API, Responsive Design
+
+![Skills & Projects](./Images/readmeImages/skills_projects.png)
 
 ## 📁 Project Highlights
 
@@ -52,6 +54,8 @@ I've been actively participating in various community sessions and projects, con
 - **GitHub:** [Nageshwar1997](https://github.com/Nageshwar1997)
 - **LinkedIn:** [Nageshwar Pawar](https://www.linkedin.com/in/nageshwar-pawar-a25041289/)
 - **Email:** nageshpawarpatil@gmail.com
+
+![Contact Me](./Images/readmeImages/contact.png)
 
 ## 🌟 Acknowledgements
 
