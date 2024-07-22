@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nageshwar Portfolio Website</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQueries.css" />
     <script
       src="https://kit.fontawesome.com/e1cbc8d8fd.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <!-- ------ Header ------ -->
-    <div id="header">
+    <header id="header">
       <div class="container">
         <nav>
           <!-- <img src="/Images/Logo.png" class="logo" alt="Name Logo" /> -->
@@ -21,44 +21,43 @@
               >.</span
             >
           </h1>
-            <ul id="side-menu">
-              <li><a href="#header">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Skills</a></li>
-              <li><a href="#my-project">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li>
-                <a
-                  href="Images/Resume.pdf"
-                  download
-                  id="resume"
-                  target="_blank"
-                  onclick="openResume()"
-                  style="color: #ff004f;"
-                  >Resume</a
-                >
-              </li>
-              <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-            </ul>
+          <ul id="side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#my-project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a
+                href="Images/Resume.pdf"
+                download
+                id="resume"
+                target="_blank"
+                onclick="openResume()"
+                >Resume</a
+              >
+            </li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
           <i class="fa-solid fa-bars" onclick="openMenu()"></i>
         </nav>
-        <div class="header-text">
-          <p>Full-Stack Web Developer</p>
-          <h1>
-            Hi, I'm <span>Nageshwar Pawar</span><br />From Nanded-Maharashtra
-          </h1>
+        <div class="infoSection">
+          <div class="header-text">
+            <h1>
+              Hi, I'm <span>Nageshwar Pawar</span><br />From Nanded-Maharashtra
+            </h1>
+            <p>Full-Stack Web Developer</p>
+          </div>
+          <div class="profilePicSection">
+            <img src="./Images/profilePic.PNG" alt="Profile Picture" />
+          </div>
         </div>
       </div>
-    </div>
-
-    <!-- ------ About ------ -->
+    </header>
     <div id="about">
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="Images/User.png" alt="User Image" />
-          </div>
-          <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <p>
               I'm Nageshwar, a dedicated Full Stack Web Developer from Nanded,
@@ -71,9 +70,17 @@
               meet client expectations but to exceed them, leveraging both
               creativity and technical expertise.
             </p>
+          </div>
+          <div class="about-col-2">
             <div class="tab-titles">
-              <p class="tab-links active-link" onclick="openTab('Skills')">
-                Skills
+              <p
+                class="tab-links active-link"
+                onclick="openTab('frontendSkills')"
+              >
+                Front-end Skills
+              </p>
+              <p class="tab-links" onclick="openTab('backendSkills')">
+                Back-end Skills
               </p>
               <p class="tab-links" onclick="openTab('experience')">
                 Experience
@@ -81,18 +88,15 @@
               <p class="tab-links" onclick="openTab('education')">Education</p>
             </div>
             <!-- Skills -->
-            <div class="tab-contents active-tab" id="Skills">
+            <div class="tab-contents active-tab" id="frontendSkills">
               <ul>
-                <li><h3>Front - End Web Development</h3></li>
                 <li>
-                  <span>HTML</span><br />Proficiency in HTML for structuring
-                  well-formed, semantic web pages, incorporating accessibility
-                  best practices and ensuring cross-browser compatibility.
-                </li>
-                <li>
-                  <span>CSS</span><br />Proficiency in CSS for designing
-                  visually appealing and responsive user interfaces, utilizing
-                  modern layout techniques and CSS frameworks to enhance user
+                  <span>HTML & CSS</span><br />Proficiency in HTML for
+                  structuring well-formed, semantic web pages, incorporating
+                  accessibility best practices and ensuring cross-browser
+                  compatibility. Proficiency in CSS for designing visually
+                  appealing and responsive user interfaces, utilizing modern
+                  layout techniques and CSS frameworks to enhance user
                   experience.
                 </li>
                 <li>
@@ -106,8 +110,9 @@
                   management.
                 </li>
               </ul>
+            </div>
+            <div class="tab-contents" id="backendSkills">
               <ul>
-                <li><h3>Back - End Web Development</h3></li>
                 <li>
                   <span>MongoDB</span><br />Proficiency in MongoDB for designing
                   and implementing scalable and efficient database solutions,
@@ -172,8 +177,6 @@
         </div>
       </div>
     </div>
-
-    <!-- ------ Services ------ -->
     <div id="services">
       <div class="container">
         <h1 class="sub-title">Skills</h1>
@@ -187,7 +190,6 @@
               a keen eye for design and a focus on creating seamless and
               visually appealing user experiences.
             </p>
-            <a href="#">Learn More</a>
           </div>
           <div>
             <i class="fa-brands fa-github"></i>
@@ -198,25 +200,20 @@
               collaborative development workflows to ensure codebase integrity
               and efficient team collaboration.
             </p>
-            <a href="#">Learn More</a>
           </div>
           <div>
             <i class="fa-solid fa-users-gear"></i>
             <h2>Back - End Web Developer</h2>
             <p>
-              I am a backend web developer proficient in [insert your preferred
-              server-side language], with expertise in designing and
+              I am a backend web developer proficient in MongoDB, Express.js, and Node.js with expertise in designing and
               implementing server-side logic, database management, and API
               integration, ensuring the functionality, performance, and security
               of web applications.
             </p>
-            <a href="#">Learn More</a>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- ------ Portfolio ------ -->
     <div id="my-project">
       <div class="container">
         <h1 class="sub-title">Projects</h1>
@@ -295,8 +292,6 @@
         <!-- <a href="#" class="btn">See More</a> -->
       </div>
     </div>
-
-    <!-- ------ Contact ------ -->
     <div id="contact">
       <div class="container">
         <div class="row">
