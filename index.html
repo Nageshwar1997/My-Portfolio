@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -82,6 +82,9 @@
               <p class="tab-links" onclick="openTab('backendSkills')">
                 Back-end Skills
               </p>
+              <p class="tab-links" onclick="openTab('computerVision')">
+                Computer Vision
+              </p>
               <p class="tab-links" onclick="openTab('experience')">
                 Experience
               </p>
@@ -91,23 +94,81 @@
             <div class="tab-contents active-tab" id="frontendSkills">
               <ul>
                 <li>
-                  <span>HTML & CSS</span><br />Proficiency in HTML for
+                  <span>HTML, CSS & JS</span><br />Proficiency in HTML for
                   structuring well-formed, semantic web pages, incorporating
                   accessibility best practices and ensuring cross-browser
                   compatibility. Proficiency in CSS for designing visually
                   appealing and responsive user interfaces, utilizing modern
                   layout techniques and CSS frameworks to enhance user
-                  experience.
+                  experience. Proficiency in JS for building interactive and
+                  dynamic web pages.
                 </li>
                 <li>
-                  <span>JavaScript</span><br />Proficiency in JavaScript for
-                  developing interactive and efficient web applications with a
-                  strong understanding of ES6+ features and best practices.
+                  <span>TanStack Query (React Query)</span><br />Caching, data
+                  fetching, background refetching, and server-state management
+                  for high-performance React applications.
                 </li>
                 <li>
-                  <span>React.js</span><br />Expertise in React.js for building
-                  dynamic and responsive user interfaces with seamless state
-                  management.
+                  <span>MediaPipe / Computer Vision</span><br />Browser-based AI
+                  features including real-time tracking, pose estimation, hand
+                  recognition, and virtual try-on experiences using MediaPipe.
+                </li>
+                <li>
+                  <span>Quill Editor</span><br />Rich text editing and custom
+                  content creation logic integrated into React applications for
+                  dynamic content workflows.
+                </li>
+                <li>
+                  <span>React.js / Next.js</span><br />Expert in React.js and
+                  Next.js with hands-on experience in SSR, CSR, and Server
+                  Components for building performant, SEO-friendly web apps.
+                </li>
+                <li>
+                  <span>TypeScript</span><br />Strong type-safety practices
+                  across large-scale frontend codebases, improving reliability
+                  and developer experience with TypeScript.
+                </li>
+                <li>
+                  <span>State Management</span><br />Proficient with Zustand,
+                  Redux Toolkit, and Context API for scalable and maintainable
+                  global state management in complex applications.
+                </li>
+                <li>
+                  <span>Tailwind CSS &amp; Responsive Design</span
+                  ><br />Building fully responsive, utility-first UIs with
+                  Tailwind CSS, ensuring seamless experiences across all screen
+                  sizes and devices.
+                </li>
+                <li>
+                  <span>Animations (Framer Motion / GSAP)</span><br />Creating
+                  smooth, declarative UI animations and complex scroll-based
+                  interactions using Framer Motion and GSAP.
+                </li>
+                <li>
+                  <span>Vite &amp; PostCSS</span><br />Fast development and
+                  build tooling with Vite, combined with PostCSS for advanced
+                  CSS transformations and optimizations.
+                </li>
+                <li>
+                  <span>Performance Optimization</span><br />Improving web
+                  performance using Lighthouse audits, lazy loading, code
+                  splitting, and best practices for Core Web Vitals.
+                </li>
+                <li>
+                  <span>API Integration (REST &amp; GraphQL)</span
+                  ><br />Seamlessly integrating RESTful and GraphQL APIs into
+                  frontend applications with proper error handling and data
+                  normalization.
+                </li>
+                <li>
+                  <span>Git &amp; GitHub</span><br />Proficient in version
+                  control with Git and GitHub for collaborative development,
+                  branching strategies, and maintaining codebase integrity.
+                </li>
+                <li>
+                  <span>Unit Testing (Vitest / Jest)</span><br />Writing
+                  reliable unit and integration tests with Vitest and Jest to
+                  ensure code correctness and prevent regressions.
                 </li>
               </ul>
             </div>
@@ -133,15 +194,39 @@
                 </li>
               </ul>
             </div>
+            <!-- Computer Vision -->
+            <div class="tab-contents" id="computerVision">
+              <ul>
+                <li>
+                  <span>MediaPipe</span><br />Hands-on experience with Google's
+                  MediaPipe framework for real-time computer vision tasks
+                  including pose estimation, hand tracking, and virtual try-on
+                  features in web-based applications.
+                </li>
+                <li>
+                  <span>Virtual Try-On</span><br />Built virtual try-on
+                  experiences leveraging MediaPipe's body segmentation and pose
+                  detection to overlay garments and accessories on live video
+                  streams.
+                </li>
+                <li>
+                  <span>3D / Three.js</span><br />Experience working with 3D
+                  rendering concepts and Three.js for creating interactive 3D
+                  scenes, model visualizations, and immersive web experiences.
+                </li>
+              </ul>
+            </div>
             <!-- Experience -->
             <div class="tab-contents" id="experience">
               <ul>
                 <li><h3>Work Experience</h3></li>
                 <li>
-                  <span>SDE - I Frontend</span><br />CTRUH Technology [Jan 2026 - Present]
+                  <span>SDE - I Frontend</span><br />CTRUH Technology [Jan 2026
+                  - Present]
                 </li>
                 <li>
-                  <span>Jr. Frontend Engineer</span><br />CTRUH Technology [Oct 2024 - Dec 2025]
+                  <span>Jr. Frontend Engineer</span><br />CTRUH Technology [Oct
+                  2024 - Dec 2025]
                 </li>
               </ul>
             </div>
@@ -178,30 +263,38 @@
             <i class="fa-solid fa-users"></i>
             <h2>Front - End Web Developer</h2>
             <p>
-              I am a front-end developer specializing in crafting engaging and
-              user-friendly web interfaces using HTML, CSS, and JavaScript, with
-              a keen eye for design and a focus on creating seamless and
-              visually appealing user experiences.
+              Specializing in crafting engaging user interfaces using HTML, CSS,
+              JavaScript, React.js, TanStack Query, Zustand, Zod, and Quill
+              Editor — with a focus on performance, scalability, and seamless
+              user experiences.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-eye"></i>
+            <h2>Computer Vision</h2>
+            <p>
+              Hands-on experience with MediaPipe for real-time pose estimation,
+              hand tracking, and virtual try-on features. Also worked on 3D
+              rendering and interactive scenes using Three.js for immersive web
+              experiences.
             </p>
           </div>
           <div>
             <i class="fa-brands fa-github"></i>
             <h2>Git Version Controller</h2>
             <p>
-              I am a skilled Git version control practitioner, proficient in
-              managing code repositories, tracking changes, and facilitating
-              collaborative development workflows to ensure codebase integrity
-              and efficient team collaboration.
+              Proficient in Git for managing code repositories, tracking
+              changes, and facilitating collaborative development workflows to
+              ensure codebase integrity and efficient team collaboration.
             </p>
           </div>
           <div>
             <i class="fa-solid fa-users-gear"></i>
             <h2>Back - End Web Developer</h2>
             <p>
-              I am a backend web developer proficient in MongoDB, Express.js, and Node.js with expertise in designing and
-              implementing server-side logic, database management, and API
-              integration, ensuring the functionality, performance, and security
-              of web applications.
+              Proficient in MongoDB, Express.js, and Node.js with expertise in
+              designing server-side logic, database management, and API
+              integration ensuring functionality, performance, and security.
             </p>
           </div>
         </div>
