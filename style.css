@@ -215,7 +215,9 @@ nav ul li a:hover::after {
   font-size: 13px;
   font-weight: 300;
   border-radius: 10px;
-  transition: background-color 0.5s, transform 0.5s;
+  transition:
+    background-color 0.5s,
+    transform 0.5s;
 }
 .services-list div i {
   font-size: 50px;
@@ -226,8 +228,8 @@ nav ul li a:hover::after {
   font-weight: 500;
   margin-bottom: 15px;
 }
-.services-list p{
-    font-size: 17px;
+.services-list p {
+  font-size: 17px;
 }
 
 .services-list div a {
@@ -250,6 +252,7 @@ nav ul li a:hover::after {
   grid-gap: 40px;
   margin-top: 50px;
 }
+
 .work {
   border-radius: 10px;
   position: relative;
@@ -278,7 +281,7 @@ nav ul li a:hover::after {
   flex-direction: column;
   padding: 0 40px;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   transition: height 0.5s;
 }
 
