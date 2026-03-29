@@ -1798,7 +1798,8 @@
   <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
   <script src="script.js"></script>
   <script>
-    const scriptURL = "https://my-mail-service.vercel.app/send-portfolio-contact-mail";
+    const scriptURL =
+      "https://my-mail-service.vercel.app/send-portfolio-contact-mail";
     const form = document.forms["submit-to-mail"];
     const msg = document.getElementById("msg");
 
@@ -1814,11 +1815,15 @@
         .post(scriptURL, data)
         .then((response) => response.message())
         .then((result) => {
-          msg.innerHTML = "Message Sent Successfully";
+          msg.innerHTML = result || "Message Sent Successfully";
           setTimeout(() => (msg.innerHTML = ""), 5000);
           form.reset();
         })
-        .catch((error) => console.error("Error!", error.message));
+        .catch((error) => {
+          console.error("Error!", error.message);
+          msg.innerHTML = error.message || "Message Sent Failed";
+          setTimeout(() => (msg.innerHTML = ""), 5000);
+        });
     });
   </script>
 </html>
